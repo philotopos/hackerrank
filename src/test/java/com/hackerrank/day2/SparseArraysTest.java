@@ -24,7 +24,11 @@ public class SparseArraysTest {
 
         Consumer<String[]> main = SparseArrays::main;
         List<String> actualOutput = runAlgorithm(inputFileName, main);
+
+        actualOutput.forEach(System.out::println);
+
         assertThat(actualOutput).isEqualTo(expectedOutput);
+
     }
 
     private List<String> runAlgorithm(String inputFileName, Consumer<String[]> algorithmImplementation) {
