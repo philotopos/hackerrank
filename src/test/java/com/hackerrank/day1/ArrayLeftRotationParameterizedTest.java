@@ -38,7 +38,7 @@ public class ArrayLeftRotationParameterizedTest {
     );
 
     @Test
-    @FileParameters(value = "classpath:array_rotate_left.csv", mapper = CsvWithHeaderMapper.class)
+    @FileParameters(value = "classpath:day1/array_rotate_left.csv", mapper = CsvWithHeaderMapper.class)
     public void csvWithHeader(String input, int d, String output) {
         int[] expected = toIntArray(output);
 

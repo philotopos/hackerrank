@@ -3,6 +3,7 @@ package com.hackerrank.day1;
 import org.junit.Before;
 import org.junit.Test;
 
+import java.io.InputStream;
 import java.util.Scanner;
 import java.util.function.BiConsumer;
 
@@ -21,7 +22,8 @@ public class ArrayLeftRotationTest {
 
     @Test
     public void readData() {
-        Scanner in = new Scanner(this.getClass().getResourceAsStream("/array_rotate_left.txt"));
+        InputStream is = this.getClass().getResourceAsStream("/day1/array_rotate_left.txt");
+        Scanner in = new Scanner(is);
         int n = in.nextInt();
         assertThat(n).isEqualTo(5);
 
