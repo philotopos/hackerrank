@@ -1,4 +1,4 @@
-package com.hackerrank.day2;
+package com.hackerrank.day3;
 
 import org.junit.Test;
 
@@ -9,15 +9,15 @@ import static com.hackerrank.util.TestUtil.readExpectedOutput;
 import static com.hackerrank.util.TestUtil.runAlgorithm;
 import static org.assertj.core.api.Assertions.assertThat;
 
-public class SparseArraysTest {
+public class SolutionTest {
     @Test
-    public void sparseArrayTest() throws Exception {
-        String inputFileName = "/day2/sparse.in";
-        String expectedOutputFileName = "/day2/sparse.out";
+    public void solutionTest() throws Exception {
+        String inputFileName = "/day3/test.in";
+        String expectedOutputFileName = "/day3/test.out";
 
         List<String> expectedOutput = readExpectedOutput(expectedOutputFileName);
 
-        Consumer<String[]> main = SparseArrays::main;
+        Consumer<String[]> main = Solution::main;
         List<String> actualOutput = runAlgorithm(inputFileName, main);
 
         actualOutput.forEach(System.out::println);
